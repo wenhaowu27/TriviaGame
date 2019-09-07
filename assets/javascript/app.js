@@ -135,6 +135,7 @@ function timeConverter(t) {
       }
 
       $(document).on("click",".ansBtn", function () {
+        if (count >= 15){stopGame()};
         var index=$(this).val();
         arr=triviaQandA.triviaChoice;
         var userIndex=triviaQandA[count-1].triviaChoice.indexOf(index);
@@ -142,7 +143,6 @@ function timeConverter(t) {
             console.log("click" + count);
             rightAns++
             time = 10;
-            if (count > 15){stopGame()}
 
             placeQuiz(count);
         }else{
