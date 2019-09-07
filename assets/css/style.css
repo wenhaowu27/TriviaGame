@@ -1,1 +1,24 @@
 
+  * {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    background-image: url("../images/trivia-colorful-stripes.jpg");
+    font-size: 30;
+    line-height: 2.0;
+  }
+  #display {
+    font-family: monospace;
+    font-size: 60px;
+    color: green;
+  
+    /* Typography */
+    text-align: center;
+  
+    /* Visual */
+    background: white;
+  }
+ 
