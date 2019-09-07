@@ -68,7 +68,6 @@ function startTimer(){
 
     clearInterval(interVal);
     interVal = setInterval(function () {
-      if (count > 15){stopGame()}
       if(time>0){
       time--;
      var convertedTime=timeConverter(time);
@@ -92,7 +91,7 @@ startTimer();
 //Function to place trivia quiz
 placeQuiz(count);
 function placeQuiz(iter) {
-  if (count > 15){stopGame()}
+  if (count > 15){stopGame()} 
        count++;      
        console.log(count)
     $("#triviaQuiz").text(triviaQandA[iter].triviaQuestion);
@@ -101,18 +100,16 @@ for (let i = 0; i < 4; i++){
     var answer = triviaQandA[iter].triviaChoice[i];
     $('#quizChoice').append('<p><input class="ansBtn" type="radio" check="uncheck" value="'+answer+'">' + '   '  + answer +'</p>');
     }   
-   
 }
 
     
 function stopGame(){
     clearInterval(interVal);
+    $(".timer").text("Times Up!!!");
     $("#correctAns").text("You got " + rightAns + " questions right");
     $("#missedAns").text("You missed " + missedAns + " questions :(");
     $('#quizChoice').text("   ");
-    $("#triviaQuiz").text("   ");
-    $(".timer").text("Times Up!!!");
-    
+    $("#triviaQuiz").text("   ");    
 }
 
 
