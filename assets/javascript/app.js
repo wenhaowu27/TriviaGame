@@ -149,7 +149,7 @@ function timeConverter(t) {
             // console.log("click else" + count);
             missedAns++;
             time = 10;
-            if (count > 15){stopGame()}
+            if (count >= 15){stopGame()}
             placeQuiz(count);
         }
       });
