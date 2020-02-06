@@ -1,0 +1,84 @@
+body {
+   background-color: #0f4c81;
+}
+
+h3 {
+    display: block;
+    color:#f0f0f0;
+}
+
+#titleimg {
+    display: block;
+    text-align: center;
+    overflow: auto;
+    z-index: -1;
+}
+
+#centered {
+    position: absolute;
+    margin: 0 35%;
+    text-align: center;
+}
+
+#Quiz {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    margin: 0 35%;
+    font-size: 18px;
+    text-align: left;
+    color: #f0f0f0;
+    /* background-image: url("../images/keypad-trivia.png");
+    background-repeat: no-repeat; */
+}
+#Choice {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    margin: 10px 35%;
+    font-size: 18px;
+    text-align: left;
+    color: #f0f0f0;
+    /* background-image: url("../images/keypad-trivia.png");
+    background-repeat: no-repeat; */
+}
+
+#display {
+    display: inline-block;
+    position: absolute;
+    margin: 200px 35%;
+    height:70px;
+    width:200px; 
+    font-family: monospace;
+    font-size: 40px;
+    color: #f0f0f0;    
+    /* border: 1px solid black; */
+    /* border-radius: 5%; */
+    /* background-image: url("../images/vegas.gif"); */
+    /* 
+     */
+  }
+.timer {
+    width:300px;
+    font-family: monospace;
+    font-size: 40px;
+    color: #f0f0f0;    
+    /* border: 1px solid black; */
+    /* border-radius: 5%;
+    background-image: url("../images/vegas.gif"); */
+    text-align: center;
+  }
+
+  /* @media only screen and (max-width:800px) { */
+    /* For tablets: */
+    /* #titleimg, #Quiz, #Choice, #display, .timer {
+      width: 80%;
+    } */
+
+  /* }
+  @media only screen and (max-width:500px) { */
+    /* For mobile phones: */
+    /* #titleimg, #Quiz, #Choice, #display, .timer {
+      width: 50%;
+    }
+  } */

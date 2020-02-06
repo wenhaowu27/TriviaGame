@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>Trivia Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trivia Game with Open API</title>
+  <link rel="stylesheet" href="./assets/css/triviagame.css">
 </head>
 <body>
-        <form id="quiz">
-            <p id="triviaQuiz" style="text-align: center; margin-top:300px"></p>
-            <br />
-            <p id="quizChoice" style="margin-left:400px"></p>
-        </form>
-        <div id="display">
-        <div class="timer"></div>
-        <div id="correctAns"></div>
-        <div id="missedAns"></div>
-    </div>
-        
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="assets/javascript/app.js"></script>
+
+  <div>
+    <h3>Choose difficulty</h3>
+    <select id="ease" style="font-size: 20px; margin: 10px auto;">
+      <option value="Option"></option>
+      <option value="general knowledge">General Knowledge</option>
+      <option value="film">Film</option>
+      <option value="music">Music</option>
+      <option value="television">Television</option>
+      <option value="video game">Video Game</option>
+      <option value="boardgame">Board Game</option>
+      <option value="computer">Computer</option>
+      <option value="mythology">music</option>
+    </select>
+  </div>
+
+  <div id="titleimg">
+    <img src="./assets/images/keypad-trivia.png" alt="">
+  </div>
+
+  
+
+  <form >
+    <p id="Quiz" ></p>
+    <br />
+    <p id="Choice"></p>
+</form>
+<div id="display">
+<div class="timer"></div>
+<!-- <div id="scored" style="font-size: 20px;;"></div> -->
+<!-- <div id="missedAns" style="font-size: 20px; color: black;"></div> -->
+</div>
+  
+  
+  <!-- Open Trivia Game API
+  https://opentdb.com/api_config.php -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="./assets/javascript/traviagame.js"></script>
 </body>
 </html>
+
+

@@ -60,7 +60,7 @@ var rightAns = 0;
 var missedAns = 0;
 var arr=[];
 
-
+console.log(triviaQandA)
 
 
 //Function to start Trivia Game
@@ -91,15 +91,16 @@ startTimer();
 //Function to place trivia quiz
 placeQuiz(count);
 function placeQuiz(iter) {
-  if (count > 15){stopGame()} 
-       count++;      
-       console.log(count)
-    $("#triviaQuiz").text(triviaQandA[iter].triviaQuestion);
-    $('#quizChoice').empty();
+  if (count < 15){
+    count++;      
+    console.log(count)
+ $("#triviaQuiz").text(triviaQandA[iter].triviaQuestion);
+ $('#quizChoice').empty();
 for (let i = 0; i < 4; i++){
-    var answer = triviaQandA[iter].triviaChoice[i];
-    $('#quizChoice').append('<p><input class="ansBtn" type="radio" check="uncheck" value="'+answer+'">' + '   '  + answer +'</p>');
-    }   
+ var answer = triviaQandA[iter].triviaChoice[i];
+ $('#quizChoice').append('<p><input class="ansBtn" type="radio" check="uncheck" value="'+answer+'">' + '   '  + answer +'</p>');
+ }   
+  } else {stopGame()} 
 }
 
     
@@ -136,6 +137,7 @@ function timeConverter(t) {
 
       $(document).on("click",".ansBtn", function () {
                 var index=$(this).val();
+                console.log(index)
         arr=triviaQandA.triviaChoice;
         var userIndex=triviaQandA[count-1].triviaChoice.indexOf(index);
         if (userIndex === triviaQandA[count-1].triviaAns){
@@ -154,20 +156,6 @@ function timeConverter(t) {
         }
       });
 
-    //   $(".ansBtn").click(function () {
-    //     var index=$(this).val();
-    //     arr=triviaQandA.triviaChoice;
-    //     var userIndex=triviaQandA[count-1].triviaChoice.indexOf(index);
-    //     if (userIndex === triviaQandA[count-1].triviaAns){
-    //         rightAns++
-    //         time = 10;
-    //         placeQuiz(count);
-    //     }else{
-    //         missedAns++
-    //         time = 10;
-    //         placeQuiz(count);
-    //     }
-    // });
 
 
 
