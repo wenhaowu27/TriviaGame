@@ -2,21 +2,19 @@ body {
    background-color: #0f4c81;
 }
 
-h3 {
-    display: block;
-    color:#f0f0f0;
-}
+
 
 #titleimg {
     display: block;
-    text-align: center;
-    overflow: auto;
+    margin-left:15%;
+    width:100%;
+    overflow: visible;
     z-index: -1;
 }
 
 #centered {
     position: absolute;
-    margin: 0 35%;
+    margin: 0 15%;
     text-align: center;
 }
 
@@ -24,7 +22,7 @@ h3 {
     display: inline-block;
     position: absolute;
     width: 100%;
-    margin: 0 35%;
+    margin: 25px 15%;
     font-size: 18px;
     text-align: left;
     color: #f0f0f0;
@@ -35,7 +33,7 @@ h3 {
     display: inline-block;
     position: absolute;
     width: 100%;
-    margin: 10px 35%;
+    margin: 45px 15%;
     font-size: 18px;
     text-align: left;
     color: #f0f0f0;
@@ -46,7 +44,7 @@ h3 {
 #display {
     display: inline-block;
     position: absolute;
-    margin: 200px 35%;
+    margin: 235px 15%;
     height:70px;
     width:200px; 
     font-family: monospace;
