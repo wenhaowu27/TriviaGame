@@ -5,10 +5,15 @@ Original of this game was done with  coding trivia question manually. I have rem
 
 ## Technology
 * Ajax to retrieve trivia data from open trivia API, https://opentdb.com/api_config.php
+* decodeURLComponent() to decode API data
 * Constructor to store trivia question into object
 * Count down timer to add challenge
 * Dropdown manu to play different categories
 * switch case to  play different categories
+
+## Project Link
+
+https://wenhaowu27.github.io/TriviaGame/
 
 ## image of technology
 ![Image of coding with Ajax](./assets/images/ajax.png)
