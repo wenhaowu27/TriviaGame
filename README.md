@@ -17,6 +17,7 @@ https://wenhaowu27.github.io/TriviaGame/
 
 ## image of technology
 ![Image of coding with Ajax](./assets/images/ajax.png)
+![Image of coding with decodeURLComponent](./assets/images/decodeURLComponent.png)
 ![Image of coding with Constructor](./assets/images/constructor.png)
 ![Image of coding with Dropdown Manu](./assets/images/dropdown.png)
 ![Image of coding with Dropdown Manu Web](./assets/images/dropdown-web.png)
