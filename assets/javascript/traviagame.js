@@ -62,6 +62,10 @@ $(document).ready(function(){
           var queryURL = "https://opentdb.com/api.php?amount=20&category=23&difficulty=easy&type=multiple&encode=url3986";
           gameOption(queryURL);
           break;
+        case "mythology":
+          var queryURL = "https://opentdb.com/api.php?amount=10&category=20&difficulty=easy&type=multiple&encode=url3986";
+          gameOption(queryURL);
+          break;
       }      
   });
       
